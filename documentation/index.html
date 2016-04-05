@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>Celebration Cards iOS App</title>
+ 	<meta name="description" content="This complete app written in Swift 2.0 brings to the users a celebration cards creator where they can customize the available templates by setting a message and changing the main image. The app is bundled with lots of templates and categories ranging from Christmas to Love or Birthday. Once the user has customized it he/she can share it to any app installed in his device as Facebook, Twitter or WhatsApp. Moreover you can almost directly built and make revenue out of this app as it also includes Google AdMob banners and interstitials support.">
+	<meta name="author" content="Yowlu">
+	<meta name="copyright" content="Yowlu">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-12-03T00:00:00+02:00">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	
+	<style>
+		html, body{background-color:#EEEEEE;color:#383838;}
+		h1,h2,h3,h4,h5,h6{color:#383838;}
+		section table{background-color:#EEEEEE;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		a.brand{/*background-image:url(assets/images/image_1.png);*/}
+		a, a:hover, a:active{color:#008C9E;}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		div.navbar-inner, .navbar .nav li ul{background:#343838;color:#FFFFFF;}
+		a.btn-navbar{background:#343838;color:#FFFFFF;}
+		.navbar .nav li a{color:#FFFFFF;text-shadow:1px 1px 0px #494F4F;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		.marketing-byline{color:#008C9E;}
+		.navbar .nav > li a{color:#FFFFFF;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#333636;color:#00DFFC;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#333636;color:#00DFFC;}
+		.navbar .nav li ul li a:hover{background:#333636;color:#00DFFC;}
+		.navbar .nav li ul li a:active{background:#333636;color:#00DFFC;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #006673;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		.hero-unit {font-size: 15px!important;padding:0px!important;}
+	</style>
+	
+	
+	
+    </head>
+    
+<body class="documenter-project-stickers-photo-app" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="#">Celebration Cards iOS App</a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#features" title="Features">Features</a></li>
+			<li><a href="#content_structure" title="Content Structure">Content Structure</a></li>
+			<li><a href="#quick_start_guide" title="Quick Start Guide">Quick Start Guide</a>
+				<ul>
+					<li><a href="#quick_start_guide_stronghow_to_change_the_menu_screen">CHANGE THE MENU SCREEN</a>
+					<li><a href="#quick_start_guide_stronghow_to_change_the_categories_screen">CHANGE THE CATEGORIES SCREEN</a>
+					<li><a href="#quick_start_guide_stronghow_to_guides_add_more_categories">ADD MORE CATEGORIES</a>
+					<li><a href="#quick_start_guide_stronghow_to_change_the_templates_screen">CHANGE THE TEMPLATES SCREEN</a>
+					<li><a href="#quick_start_guide_stronghow_to_guides_add_more_templates">ADD MORE TEMPLATES</a>
+					<li><a href="#quick_start_guide_stronghow_to_change_the_card_screen">CHANGE THE CARD SCREEN</a>
+					<li><a href="#quick_start_guide_stronghow_to_add__ads">HOW TO ADD ADS</a>
+				</ul>
+			</li>
+			<li><a href="#screenshots" title="Screenshots">Screenshots</a></li>
+			<li><a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a></li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container" id="documenter_content">
+    
+	<div id="documenter-cover">
+	<div class="masthead">
+	    <h1>Celebration Cards iOS App</h1>
+	    <p>This complete app written in Swift 2.0 brings to the users a celebration cards creator where they can customize the available templates by setting a message and changing the main image.
+		<br>
+		<br>
+	    The app is bundled with lots of templates and categories ranging from Christmas to Love or Birthday. Once the user has customized it he/she can share it to any app installed in his device as Facebook, Twitter or WhatsApp. 
+	    <br>
+	    <br>
+	    Moreover you can almost directly built and make revenue out of this app as it also includes Google AdMob banners and interstitials support.</p>
+	    <ul class="marketing-byline">
+			<li>created: 12/03/2015</li>
+			<li>latest update: 12/03/2015</li>
+			<li>by: Yowlu</li>
+			<li><a href=""></a></li>
+		</ul>
+	    <p class="download-info">
+			
+		</p>
+		
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing my app. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!</p>
+   </div> <!-- intro -->
+   
+	</div>
+      
+  <section id="features">
+	<div class="page-header"><h3>Features</h3><hr class="notop"></div>
+<p>
+	This app has been developed using <strong>Swift 2.0 </strong>and <strong>Xcode</strong> in order to provide a ready to use and customizable template to be integrated in any app or to be released alone itself.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Here are some of the most important features:</strong></p>
+<ul>
+	<li>
+		<strong>Create Celebration Cards:</strong> Easily, choose from dozens of templates and customize them to make your card.</li>
+	<li>
+		<strong>iPhone & iPad support:</strong> Works on any model of this family of devices.</li>
+	<li>
+		<strong>iOS8 &amp; iOS9:</strong> Specially coded to work on the last OS major updates.</li>
+	<li>
+		<strong>Flat design: </strong>It has a flat design matching current web and app design trends. </li>
+	<li>
+		<strong>Easy customization: </strong>It has a minimalist touch and so there only a few elements. Concerning this fact and the use of the Storyboard, it is easy to change colors and fonts.</li>
+	<li>
+		<strong>Use of Storyboard:</strong> In order to provide a visual reference and speed up development.</li>
+	<li>
+		<strong>Clean &amp; commented code: </strong>The code tries to be as basic as possible and there are comments on the most important parts.</li>
+	<li>
+		<strong>Auto resize with all devices:</strong> The UI adapts itself using NSConstraints and shows or hides certain elements to fit all screens.</li>
+	<li>
+		<strong>Share to any app:</strong> Thanks to in-built share protocol, you can share your final image using any app installed on your device.</li>
+	<li>
+		<strong>Google AdMob support:</strong> We added a bottom banner as well as a interstitial view to display Google AdMob ads so you can make some revenue out of this app.</li>
+</ul>
+</section>
+<section id="content_structure">
+	<div class="page-header"><h3>Content Structure</h3><hr class="notop"></div>
+<p>
+	There is the typical structure of an Xcode iOS Swift 2.0 project:</p>
+<ul>
+	<li>
+		<em>[folder] </em><strong>Main Folder</strong>
+		<ul>
+			<li>
+				GoogleMobileAds.framework</li>
+			<li>
+				Other frameworks...</li>
+		</ul>
+	</li>
+</ul>
+<ul style="margin-left: 40px;">
+	<li>
+		<em>[folder] </em><strong>CelebrationCards</strong>
+		<ul>
+			<li>
+				AppDelegate.swift</li>
+			<li>
+				MenuViewController.swift</li>
+			<li>
+				CategoriesViewController.swift</li>
+			<li>
+				TemplatesViewController.swift</li>
+			<li>
+				CardViewController.swift</li>
+			<li>
+				Main.storyboard</li>
+			<li>
+				LaunchScreen.storyboard</li>
+		</ul>
+	</li>
+</ul>
+<ul style="margin-left: 80px;">
+	<li>
+		<em>[folder]</em> <strong>Resources</strong>
+		<ul>
+			<li>
+				<em>[folder] </em><strong>Images</strong>
+				<ul>
+					<li>
+						logo.png</li>
+					<li>
+						back.png</li>
+					<li>
+						back_white.png</li>
+					<li>
+						share.png</li>
+					<li>
+						camera_icon.png</li>
+					<li>
+						<em>[folder]</em> <strong>Card Decoration</strong>
+						<ul>
+							<li>
+								All resource images used to create the templates</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+<p>
+	&nbsp;</p>
+<p>
+	The Main folder contains all the frameworks <strong>needed to display AdMob ads</strong>.</p>
+<p>
+	The CelebrationCards folder contains the main files of the app such as the <strong>AppDelegate.swift</strong> file which is <strong>used to init the app but it's the default version as it has not been modified</strong>, the <strong>MenuViewController.swift</strong> file which <strong>works as the cover or intro screen</strong>, the <strong>CategoriesViewController.swift</strong> file which is <strong>used to display all the available categories</strong>, the <strong>TemplatesViewController.swift</strong> file which is used to <strong>show the available templates</strong>, the <strong>CardViewController.swift used to display and create the final card</strong> and the <strong>Main.storyboard</strong> file which is <strong>used to create and style the structure and the UI elements</strong>.</p>
+<p>
+	The <strong>Images folder</strong> inside the Resources folder contains the <strong>images</strong> the app uses. <strong>If you want to change the look and feel of the app you can substitute your new images for these ones</strong>. Also, there is another folder, the <strong>Card Decoration</strong>, that contains the resources used to create cards.</p>
+</section>
+<section id="quick_start_guide">
+	<div class="page-header"><h3>Quick Start Guide</h3><hr class="notop"></div>
+<p>
+	The app is very simple and in a few steps can be fully customized:</p>
+<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		<h4 id="quick_start_guide_stronghow_to_change_the_menu_screen"><strong>Change the menu screen:</strong></h4>
+	</li>
+</ul>
+<p style="margin-left: 40px;">
+	The menu screen consists on <strong>two elements: the logo and the start button.</strong>:</p>
+<ul>
+	<li style="margin-left: 80px;">
+		<strong>To change the logo</strong> it is as easy as <strong>import a new photo named logo.png</strong> and drop it in the Resources -> images folder.
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/new_logo.png"></p></li>
+	<li style="margin-left: 80px;">
+		For the <strong>start button</strong> as a native button, you can <strong>change its background color, font family, size and color as well as its corner radius</strong>:
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/start_button1.png">
+<br>
+	<img class="img-responsive" src="./assets/img/start_button2.png">
+	<br>
+	<img class="img-responsive" src="./assets/img/start_button3.png"></p></li>
+</ul>
+
+<ul>
+	<li>
+		<h4 id="quick_start_guide_stronghow_to_change_the_categories_screen"><strong>Change the categories screen:</strong></h4>
+	</li>
+</ul>
+<p style="margin-left: 40px;">
+	<strong>The categories screen consists of a navigation bar, the collection view and the ads view</strong>. From this elements you can customize some properties to make it more your way</strong>:</p>
+<ul>
+	<li style="margin-left: 80px;">
+		<strong>To change the nav bar</strong> it is as easy as <strong>go to the storyboard</strong> and change some properties as the tint color.
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/nav_bar.png"></p></li>
+	<li style="margin-left: 80px;">
+		For the <strong>button on the nav bar</strong>, as usual, you can change it by <strong>loading the image and set them as the button image</strong>. You have to load your new image (29x22px, 57x44px and 86x66px) and <strong>name it back_white.png, back_white@2x.png and back_white@3.png</strong>.
+	<p style="margin-left: 40px;">
+		<br>
+		<img class="img-responsive" src="./assets/img/share_button.png"></p></li>
+	<li style="margin-left: 80px;">
+		Concerning the <strong>categories collection view</strong> you can edit its <strong>background color as well as the corner radius and size of each cell.</strong> The background color and the corner radius can be changed in the Storyboard while the size of each cell is defined in CategoriesViewController at line 78.
+	<p style="margin-left: 40px;">
+		<br>
+		<img class="img-responsive" src="./assets/img/cat_collection1.png">
+		<br>
+		<br>
+		<img class="img-responsive" src="./assets/img/cat_collection2.png">
+		<br>
+		<br>
+		<img class="img-responsive" src="./assets/img/cat_collection3.png"></p></li>
+</ul>
+
+<ul>
+	<li>
+		<h4 id="quick_start_guide_stronghow_to_guides_add_more_categories"><strong>Add more categories:</strong></h4>
+	</li>
+</ul>
+<p style="margin-left: 40px;">
+	Right now, the app <strong>is bundled with 5 categories</strong>. However if you would like to <strong>add more categories</strong>, here is how it's done:</p>
+<ul>
+	<li style="margin-left: 80px;">
+		First, you should <strong>load the images that represents each new category</strong> by adding them to Card Decoration folder.
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/cat_guides1.png"></p></li>
+	<li style="margin-left: 80px;">
+		Then you should <strong>go to CategoriesViewControler at line 18</strong> and add the name of those images to the categories array</strong>:
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/cat_guides2.png"></p></li>
+	<li style="margin-left: 80px;">
+		Also, of course, <strong>you should add templates to this category in the TemplatesViewController as you can see <a href="#quick_start_guide_stronghow_to_guides_add_more_templates">here</a>:</strong>.
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/cat_guides3.png"></p></li>
+</ul>
+
+<ul>
+	<li>
+		<h4 id="quick_start_guide_stronghow_to_change_the_templates_screen"><strong>Change the templates screen:</strong></h4>
+	</li>
+</ul>
+<p style="margin-left: 40px;">
+	<strong>The templates screen is similar to the categories screen as also consists of a navigation bar, the collection view and the ads view</strong>. The only difference is the collection view cells distribution. As well, from this elements you can customize some properties to make it more your way</strong>:</p>
+<ul>
+	<li style="margin-left: 80px;">
+		<strong>To change the nav bar</strong> it is as easy as <strong>go to the storyboard</strong> and change some properties as the tint color.
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/nav_bar.png"></p></li>
+	<li style="margin-left: 80px;">
+		For the <strong>button on the nav bar</strong>, as usual, you can change it by <strong>loading the image and set them as the button image</strong>. You have to load your new image (29x22px, 57x44px and 86x66px) and <strong>name it back_white.png, back_white@2x.png and back_white@3.png</strong>.
+	<p style="margin-left: 40px;">
+		<br>
+		<img class="img-responsive" src="./assets/img/share_button.png"></p></li>
+	<li style="margin-left: 80px;">
+		Concerning the <strong>categories collection view</strong> you can edit its <strong>background color as well as the shadow and size of each cell.</strong> The background color can be changed in the Storyboard while the shadow of each cell is defined in TemplatesViewController at line 133 and the size of each cell is defined in TemplatesViewController at line 145. It should be noted that the app uses two different cells to fit the landscapes and portraits templates.
+	<p style="margin-left: 40px;">
+		<br>
+		<img class="img-responsive" src="./assets/img/temp_collection1.png">
+		<br>
+		<br>
+		<img class="img-responsive" src="./assets/img/temp_collection2.png">
+		<br>
+		<br>
+		<img class="img-responsive" src="./assets/img/temp_collection3.png"></p></li>
+</ul>
+
+<ul>
+	<li>
+		<h4 id="quick_start_guide_stronghow_to_guides_add_more_templates"><strong>Add more templates:</strong></h4>
+	</li>
+</ul>
+<p style="margin-left: 40px;">
+	Right now, the app <strong>is bundled with more than 40 templates</strong>. However if you would like to <strong>add more templates</strong>, here is how it's done:</p>
+<ul>
+	<li style="margin-left: 80px;">
+		First, you should <strong>load the images that represents each new template and the ones that are used to build them</strong> by adding them to Card Decoration folder.
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/cat_guides1.png"></p></li>
+	<li style="margin-left: 80px;">
+		Then you should <strong>go to TemplatesViewControler at line 54</strong> and add the needed information of each template to the templates array</strong>. You need to <strong>set the background_image for the image that is going to be displayed in this collection view, the type for the template type you want to use it, the text for the placeholder text on the template, the image for the background image on the card, the image2 for the decoration image on the card, the background color for the background color on the card and the foreground color for the text color on the card</strong>:
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/temp_guides2.png"></p></li>
+	<li style="margin-left: 80px;">
+		Moreover, <strong>instead of adding new templates you can create a new template, meaning a new layout</strong>. To do so, you have to go to Main.storyboard <strong> and create a new view using one of the current templates as a starting point</strong>. Then you can move and resize any of the elements to create your new template.
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/temp_guides3.png"></p></li>
+	<li style="margin-left: 80px;">
+		Finally, after you created this new templates <strong>you need to go to CardViewController at line 142 and add a new case for your new template, set if is a portrait or landscape template as well as create a new variable for it and link it to the interface Builder.</strong>.
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/temp_guides4.png">
+	<br>
+	<br>
+	<img class="img-responsive" src="./assets/img/temp_guides4.png"></p></li>
+</ul>
+
+<ul>
+	<li>
+		<h4 id="quick_start_guide_stronghow_to_change_the_card_screen"><strong>Change the card screen:</strong></h4>
+	</li>
+</ul>
+<p style="margin-left: 40px;">
+	<strong>The cards screen is a little bit different to the rest of screens as also consists of a two top buttons, a scroll view containing the card view and the ads view</strong>. You can only customize the top buttons.</strong>:</p>
+<ul>
+	<li style="margin-left: 80px;">
+		<strong>To customize the top buttons</strong> it is as easy as <strong>load two new images named back.png and share.png</strong>. Check the existent ones to know which sizes are needed.
+	<p style="margin-left: 40px;">
+		<br>
+	<img class="img-responsive" src="./assets/img/share_back.png"></p></li>
+</ul>
+
+<ul>
+	<li>
+		<h4 id="quick_start_guide_stronghow_to_add__ads"><strong>​How to add ads (Google AdMob or Apple iAD):</strong></h4>
+	</li>
+</ul>
+<ul>
+<li><p style="margin-left: 40px;">
+	To <strong>enable Google AdMob</strong> you need to go to CategoriesViewController.swift, TemplatesViewController.swift and CardViewController and search and change the value of <strong>useAds to 1</strong>.</p>
+<p style="margin-left: 40px;">
+	<img class="img-responsive" src="./assets/img/enable_ads.png"></p></li>
+	<li>To <strong>change your AdMob id</strong> you just need to go to CategoriesViewController.swift, TemplatesViewController.swift and CardViewController and search and change the value of adUnitID to your AdMob id for the banner and interstitialAdUnitID for the interstitial.</p>
+<p style="margin-left: 40px;">
+	<img class="img-responsive" src="./assets/img/admob_id.png"></p></li>	
+<li><p style="margin-left: 40px;">
+	In case <strong>you don't want to use ads</strong> you just need to go to CategoriesViewController.swift, TemplatesViewController.swift and CardViewController and search and change the value of useAds to 0.</p>
+<p style="margin-left: 40px;">
+	<img class="img-responsive" src="./assets/img/enable_ads.png"></p></li>
+
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+</section>
+<section id="screenshots">
+	<div class="page-header"><h3>Screenshots</h3><hr class="notop"></div>
+	<img class="img-responsive" src="./assets/img/sc1.png">
+	<img class="img-responsive" src="./assets/img/sc2.png">
+	<img class="img-responsive" src="./assets/img/sc3.png">
+	<img class="img-responsive" src="./assets/img/sc4.png">
+	<img class="img-responsive" src="./assets/img/sc5.png">
+</section>
+<section id="sources_and_credits">
+	<div class="page-header"><h3>Sources and Credits</h3><hr class="notop"></div>
+<p>
+	All the graphic resource used on this project can only be used inside this project.</p>
+<hr>
+<p>
+	Once again, thank you so much for purchasing this theme. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this theme. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section.</p>
+<p>
+	<strong>Yowlu</strong></p>
+</section>
+
+
+
+    <hr />
+
+<footer>
+    <p>Copyright Yowlu 2015 made with the <a href="http://rxa.li/documenter">Documenter v2.0</a></p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script>document.createElement('section');var duration='500',easing='swing';</script>
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-min.js"></script> 
+</body>
+</html>
